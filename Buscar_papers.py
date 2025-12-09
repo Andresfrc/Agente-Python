@@ -1,7 +1,7 @@
 from scholarly import scholarly
 import time
 
-def burcar_papers(consulta,max_resultados=5):
+def buscar_papers(consulta,max_resultados=5):
     """
     Buscar papers academicos en Google Scholar
     Args:
@@ -57,7 +57,7 @@ def formato_resultado(paper,numero):
     """    
 
     if isinstance(paper['autores'], list):
-        autores:','.join(paper['autores'])
+        autores=','.join(paper['autores'])
     else:
         autores=paper['autores']
 
